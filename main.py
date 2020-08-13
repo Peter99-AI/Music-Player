@@ -13,11 +13,6 @@ root = tk.ThemedTk()
 root.get_themes()                 # Returns a list of all themes that can be set
 root.set_theme("radiance")         # Sets an available theme
 
-# Fonts - Arial (corresponds to Helvetica), Courier New (Courier), Comic Sans MS, Fixedsys,
-# MS Sans Serif, MS Serif, Symbol, System, Times New Roman (Times), and Verdana
-#
-# Styles - normal, bold, roman, italic, underline, and overstrike.
-
 statusbar = ttk.Label(root, text="Welcome to Music Player", relief=SUNKEN, anchor=W, font='Times 10 italic')
 statusbar.pack(side=BOTTOM, fill=X)
 
@@ -31,10 +26,6 @@ subMenu = Menu(menubar, tearoff=0)
 
 playlist = []
 
-
-# playlist - contains the full path + filename
-# playlistbox - contains just the filename
-# Fullpath + filename is required to play the music inside play_music load function
 
 def browse_file():
     global filename_path
